@@ -1,0 +1,189 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-accent: #ff2e63;
+  --color-primary-hover: #e84545;
+  --color-dark-deep: #000000;
+  --color-dark-panel: rgba(17, 19, 34, 0.75);
+  --color-dark-card: rgba(30, 41, 59, 0.45);
+
+  --font-heading: "Instrument Serif", serif;
+  --font-body: "Barlow", sans-serif;
+
+  --animate-wave-1: wave-anim 1.2s ease-in-out infinite;
+  --animate-wave-2: wave-anim 1.2s ease-in-out 0.2s infinite;
+  --animate-wave-3: wave-anim 1.2s ease-in-out 0.4s infinite;
+  --animate-wave-4: wave-anim 1.2s ease-in-out 0.1s infinite;
+  --animate-wave-5: wave-anim 1.2s ease-in-out 0.3s infinite;
+}
+
+@keyframes wave-anim {
+  0%, 100% {
+    height: 4px;
+  }
+  50% {
+    height: 24px;
+  }
+}
+
+body {
+  background-color: #000000;
+  color: #f3f4f6;
+  font-family: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.news-marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 1.25rem;
+  animation: news-marquee linear infinite;
+  will-change: transform;
+}
+
+.news-marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.news-card {
+  flex-shrink: 0;
+}
+
+@media (max-width: 767px) {
+  .news-carousel {
+    padding-inline: max(0.75rem, calc((100% - (100vw - 3.5rem)) / 2));
+  }
+}
+
+@media (min-width: 768px) {
+  .news-carousel-centered {
+    justify-content: center;
+  }
+}
+
+@keyframes news-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff2e63;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e84545;
+}
+
+.glass {
+  background: rgba(17, 19, 34, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-hover:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 46, 99, 0.3);
+  box-shadow: 0 0 20px rgba(255, 46, 99, 0.1);
+}
+
+@layer components {
+  .liquid-glass-strong {
+    background: rgba(255, 255, 255, 0.01);
+    background-blend-mode: luminosity;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    border: none;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.05),
+      inset 0 1px 1px rgba(255, 255, 255, 0.15);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .liquid-glass-strong::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1.4px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.2) 20%,
+      rgba(255, 255, 255, 0) 40%,
+      rgba(255, 255, 255, 0) 60%,
+      rgba(255, 46, 99, 0.35) 80%,
+      rgba(255, 46, 99, 0.6) 100%
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+}
+
+.cta-ambient-bg {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 46, 99, 0.35), transparent 40%),
+    radial-gradient(circle at 80% 30%, rgba(207, 70, 255, 0.28), transparent 45%),
+    radial-gradient(circle at 50% 90%, rgba(255, 46, 99, 0.2), transparent 50%),
+    #05060a;
+  background-size: 200% 200%;
+  animation: ambient-drift 14s ease-in-out infinite;
+}
+
+@keyframes ambient-drift {
+  0%, 100% { background-position: 0% 0%, 100% 0%, 50% 100%; }
+  50% { background-position: 20% 30%, 70% 40%, 40% 80%; }
+}
+
+.cta-ambient-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+}
+.cta-ambient-bars span {
+  width: 3px;
+  border-radius: 9999px;
+  background: linear-gradient(to top, rgba(255, 46, 99, 0.6), rgba(255, 255, 255, 0.15));
+  animation: cta-bar-pulse 2.4s ease-in-out infinite;
+}
+@keyframes cta-bar-pulse {
+  0%, 100% { transform: scaleY(0.3); opacity: 0.4; }
+  50% { transform: scaleY(1); opacity: 0.9; }
+}
+
+.cards-3d-viewport {
+  perspective: 1600px;
+}
+.cards-3d-track {
+  transform-style: preserve-3d;
+}
+.cards-3d-slot {
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.55s ease;
+}
