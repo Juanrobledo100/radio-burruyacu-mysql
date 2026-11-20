@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Espacios comunitarios</title>
+  <desc id="desc">Ilustracion de un parque con arboles, sendero y edificios al fondo.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#297c9a"/>
+      <stop offset="1" stop-color="#9bd6c0"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#78b56e"/>
+      <stop offset="1" stop-color="#286b59"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="430" fill="url(#sky)"/>
+  <circle cx="952" cy="132" r="67" fill="#ffe39b"/>
+  <path d="M0 378h1200v297H0z" fill="url(#ground)"/>
+  <path d="M0 397 150 290h128v107zm888 0 137-152h175v152z" fill="#567f80"/>
+  <path d="M60 395V280h87v115m962 0V205h68v190" fill="#e5d7b8"/>
+  <path d="M165 675c115-130 200-205 435-205s320 75 435 205" fill="#d9c99c"/>
+  <path d="M162 675c137-113 249-159 438-159s301 46 438 159" fill="none" stroke="#f3e5b7" stroke-width="10"/>
+  <path d="M250 424V235" stroke="#5b4235" stroke-width="30" stroke-linecap="round"/>
+  <circle cx="248" cy="208" r="101" fill="#2c7655"/>
+  <circle cx="188" cy="245" r="70" fill="#4a9a64"/>
+  <circle cx="305" cy="260" r="76" fill="#3b895d"/>
+  <path d="M934 430V300" stroke="#564238" stroke-width="22" stroke-linecap="round"/>
+  <circle cx="934" cy="278" r="73" fill="#357e57"/>
+  <path d="M492 430v-71m216 71v-71" stroke="#604a3d" stroke-width="13" stroke-linecap="round"/>
+  <path d="M466 363h268v26H466z" fill="#d7a862"/>
+  <path d="M514 389v39m172-39v39" stroke="#735640" stroke-width="10"/>
+  <circle cx="385" cy="430" r="18" fill="#f1bc72"/>
+  <circle cx="818" cy="427" r="18" fill="#ee9c78"/>
+</svg>

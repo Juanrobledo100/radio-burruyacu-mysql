@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Bienestar cotidiano</title>
+  <desc id="desc">Ilustracion de un corazon rodeado de hojas sobre un fondo sereno.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#092f43"/>
+      <stop offset="1" stop-color="#147c78"/>
+    </linearGradient>
+    <linearGradient id="heart" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#ffad87"/>
+      <stop offset="1" stop-color="#ff5d83"/>
+    </linearGradient>
+    <radialGradient id="halo">
+      <stop stop-color="#c5ffcf" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#c5ffcf" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="600" cy="330" r="315" fill="url(#halo)"/>
+  <circle cx="600" cy="330" r="218" fill="#0b4855" stroke="#75d9bd" stroke-width="5"/>
+  <path d="M600 495 450 355c-92-86 27-222 150-118 123-104 242 32 150 118z" fill="url(#heart)"/>
+  <path d="M600 480V315m0 72c-65-5-100-38-111-87m111 39c58-4 93-38 105-87" fill="none" stroke="#fff0d9" stroke-width="14" stroke-linecap="round"/>
+  <path d="M490 337c-50-37-64-88-43-135 52 13 83 52 82 110m180 25c50-37 64-88 43-135-52 13-83 52-82 110" fill="#75d9bd" stroke="#baf4d6" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M240 490c75-22 136-9 183 39m537-39c-75-22-136-9-183 39" fill="none" stroke="#80dac0" stroke-width="9" stroke-linecap="round" opacity=".75"/>
+  <circle cx="242" cy="210" r="9" fill="#fff0b0"/>
+  <circle cx="930" cy="185" r="12" fill="#fff0b0"/>
+  <circle cx="985" cy="455" r="7" fill="#c5ffcf"/>
+</svg>

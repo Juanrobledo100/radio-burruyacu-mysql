@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Agenda cultural</title>
+  <desc id="desc">Ilustracion de un escenario con luces y notas musicales.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#17133d"/>
+      <stop offset="1" stop-color="#7c246d"/>
+    </linearGradient>
+    <linearGradient id="stage" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#ff79b0"/>
+      <stop offset="1" stop-color="#ffb84d"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop stop-color="#fff5c2" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#fff5c2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="600" cy="250" r="290" fill="url(#glow)" opacity=".55"/>
+  <path d="M0 0h210v510L0 620zm1200 0H990v510l210 110z" fill="#341448"/>
+  <path d="M110 0h115v390L70 525V0zm980 0H975v390l155 135V0z" fill="#a82d70" opacity=".8"/>
+  <path d="M205 470c100-95 190-128 395-128s295 33 395 128v145H205z" fill="#20143a" stroke="#ffd277" stroke-width="8"/>
+  <path d="M290 470c58-73 155-111 310-111s252 38 310 111v125H290z" fill="url(#stage)"/>
+  <path d="M370 595c25-98 103-153 230-153s205 55 230 153" fill="#30163c"/>
+  <path d="M430 594c20-54 76-83 170-83s150 29 170 83" fill="#ffdb9a"/>
+  <circle cx="246" cy="170" r="12" fill="#ffe18b"/>
+  <circle cx="946" cy="130" r="10" fill="#fff1a8"/>
+  <circle cx="850" cy="260" r="8" fill="#ffb8d6"/>
+  <path d="M335 115v76m0-76 42-11v66m-42-34 42-11" fill="none" stroke="#ffe18b" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M880 205v78m0-78 43-12v67m-43-34 43-11" fill="none" stroke="#ffb8d6" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M0 620h1200v55H0z" fill="#140f2b"/>
+</svg>

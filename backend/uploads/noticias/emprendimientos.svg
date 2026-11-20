@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Emprendimientos locales</title>
+  <desc id="desc">Ilustracion de un pequeno puesto con productos y plantas.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#382044"/>
+      <stop offset="1" stop-color="#b35b36"/>
+    </linearGradient>
+    <linearGradient id="awning" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#ffd36f"/>
+      <stop offset="1" stop-color="#ff8f5a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="940" cy="140" r="76" fill="#ffe3a1" opacity=".82"/>
+  <path d="M0 510c210-85 400-78 600 0s390 85 600 0v165H0z" fill="#342943"/>
+  <path d="M246 262h708v305H246z" fill="#f3d9ac" stroke="#57384a" stroke-width="14"/>
+  <path d="m205 272 84-132h622l84 132z" fill="url(#awning)" stroke="#57384a" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M289 141v131h124V141m124 0v131h124V141m124 0v131h124V141" fill="#fff0c4" opacity=".62"/>
+  <path d="M321 338h254v229H321z" fill="#6a3b4d"/>
+  <path d="M610 341h276v121H610z" fill="#fff1c8"/>
+  <path d="M610 479h276v88H610z" fill="#c66d46"/>
+  <circle cx="683" cy="397" r="29" fill="#78a56a"/>
+  <circle cx="747" cy="397" r="29" fill="#e9a845"/>
+  <circle cx="811" cy="397" r="29" fill="#d96858"/>
+  <path d="M390 474h116v93H390z" fill="#a94f49"/>
+  <path d="M408 474v-66c0-23 18-41 41-41s41 18 41 41v66" fill="#f2bc62" stroke="#fff0c4" stroke-width="8"/>
+  <path d="M173 552h856" stroke="#ffd99b" stroke-width="12" stroke-linecap="round"/>
+  <path d="M155 481h53v70h-53zm839 0h53v70h-53z" fill="#79a96c"/>
+</svg>

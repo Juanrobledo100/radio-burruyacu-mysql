@@ -1,0 +1,11 @@
+﻿node_modules/
+.env
+uploads/*
+!uploads/noticias/
+uploads/noticias/*
+!uploads/noticias/agenda-cultural.svg
+!uploads/noticias/bienestar.svg
+!uploads/noticias/emprendimientos.svg
+!uploads/noticias/espacios-comunitarios.svg
+!uploads/noticias/deporte-comunitario.svg
+*.log
